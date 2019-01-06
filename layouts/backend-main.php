@@ -39,7 +39,7 @@ unset($languages[$lang]);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'My Company',
+        'brandLabel' => 'Seo Bölümü',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -47,19 +47,8 @@ unset($languages[$lang]);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/home']],
-        ['label' => 'Sample', 'url' => ['/sample/samples/index'],
-            'items' => [
-                    ['label' => 'Create', 'url' => ['/sample/samples/create']],
-                    ['label' => 'Manage', 'url' => ['/sample/samples/index']]
-            ]
-        ],
-        ['label' => 'Menu', 'url' => ['/menu/menu/index'],
-            'items' => [
-                    ['label' => 'Create', 'url' => ['/menu/menu/create']],
-                    ['label' => 'Manage', 'url' => ['/menu/menu/index']]
-            ]
-        ],
-        ['label' => 'Settings', 'url' => ['/site/setting']],
+        ['label' => 'Seo', 'url' => ['/seoayarlari/seo/index']],
+         
 
     ];
     if (Yii::$app->user->isGuest) {
@@ -99,7 +88,7 @@ unset($languages[$lang]);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; Kocaeli University Open Source Lab <?= date('Y') ?></p>
+        <p class="pull-left">&copy; Kocaeli University Open Source Labb <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
